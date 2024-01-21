@@ -1,4 +1,11 @@
 /* styles/tailwind.css */
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities'; */
+
+/* This should be inside the styles file inside the src folder */
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

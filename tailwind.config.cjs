@@ -1,35 +1,54 @@
-// /** @type {import('tailwindcss').Config} */
+// // tailwind.config.js
 // module.exports = {
-//   // content: ["./src/**/*.{html,jsx}"],
-//   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+//   mode: "jit",
+//   content: [
+//     "./index.html",
+//     "./src/components/**/*.{js,jsx,ts,tsx}",
+//     "./src/**/*.html",
+//     "./src/**/*.js",
+//     "./src/**/*.jsx",
+//     "./src/**/*.ts",
+//     "./src/**/*.tsx",
+//   ],
+//   darkMode: "media",
 //   theme: {
-//     screens: {
-//       sm: "640px", // Small screens and up (default)
-//       md: "768px", // Medium screens and up
-//       lg: "1024px", // Large screens and up
-//       xl: "1280px", // Extra large screens and up
-//       // Add more breakpoints as needed
+//     extend: {
+//       // Add any customizations or extensions here
 //     },
-//     // Other theme configurations...
 //   },
-//   plugins: [],
+//   variants: {
+//     extend: {
+//       // Add any custom variants here if needed
+//     },
+//   },
+//   screens: {
+//     xs: "480px",
+//     ss: "620px",
+//     sm: "768px",
+//     md: "1060px",
+//     lg: "1200px",
+//     xl: "1700px",
+//   },
+//   plugins: [
+//     // Add any custom plugins here if needed
+//   ],
 // };
 
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/*/.{js,jsx}", ".src/index.html"],
   mode: "jit",
+  content: [
+    "./index.html",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.html",
+    "./src/**/*.js",
+    "./src/**/*.jsx",
+    "./src/**/*.ts",
+    "./src/**/*.tsx",
+  ],
+  darkMode: "media",
   theme: {
     extend: {
-      colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
-        dimWhite: "rgba(255, 255, 255, 0.7)",
-        dimBlue: "rgba(9, 151, 124, 0.1)",
-      },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-      },
+      // Add any customizations or extensions here
     },
     screens: {
       xs: "480px",
@@ -40,5 +59,12 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      // Add any custom variants here if needed
+    },
+  },
+  plugins: [
+    // Add any custom plugins here if needed
+  ],
 };

@@ -1,5 +1,0 @@
--Install Framer Motion
--Successfully install tailwind 
--Download Video Icon
--Get a preloader and delete loader.html
--Get a color Palette

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Outfit&family=Poppins&display=swap');
+
+:root {
+    --basic-color: #1c1c1c
+}
+
+.hero {
+    background-color: #3d5a80;
+    background: #000;
+    /* background-color: var(--basic-color); */
+}
+
+.hero::-webkit-scrollbar {
+    display: none
+}
+
+@font-face {
+    font-family: Radio;
+    src: url("static/fonts/Road Radio.otf");
+}
+
+.logo-text {
+    font-family: "Poppins";
+    color: #f4f4f4;
+}
+
+.fa-x-twitter {
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.inner-hero {
+    /* background-image: url(static/bg-back.jpg); */
+}
+
+.movie-title {
+    font-family: "Radio";
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+
+}
+
+.details-text {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.top-title {
+    font-family: "Poppins"
+}
+
+.release-img {
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+    background-color: #3d3d3d;
+    background-image: url(static/bg-back.jpg);
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all .3s;
+}
+
+.Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+}
+
+.fa-video {
+    color: #fff;
+}
+
+.fa-star-of-life {
+    color: #3d5a80;
+}
+
+
+.release-title {
+    color: #3d5a80;
+}
+
+.footer-heart {
+    color: #ff0000
+}
+
+.star-right .fa-heart {
+    color: #3d3d3d;
+    cursor: pointer
+}
+
+.credit {
+    font-family: "DM Sans";
+
+    font-size: .8rem;
+}
+
+
+
+.release-name {
+    font-family: "Outfit";
+    color: #2ad;
+}
+
+.release-actors * {
+    font-size: 0.8rem
+}
+
+.title-star {
+    width: 100%;
+}
+
+.overview {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+
+}
+
+.message-details p {
+    font-family: "DM Sans";
+}
+
+.fa-play {
+    transform: rotate(270deg) scale(1.2);
+    background-color: transparent;
+    /* transform: scale(1.2); */
+
+}
+
+header {
+    background-color: #3d5a80 !important;
+}
+
+header:hover {
+    opacity: 1 !important;
+}
+
+@media only screen and (max-width:400px) {
+    .details-text {
+        width: 100%;
+    }
+}
